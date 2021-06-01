@@ -105,7 +105,7 @@ public class DrawOverApps extends CordovaPlugin {
 		}
 
 		public void openServiceWithHTMLfile(CallbackContext callbackContext,JSONObject option) throws JSONException {
-				serviceParameters.setString(FOLDER_PATH + option.getString("path"),"file_path");
+				serviceParameters.setString( option.getString("path"),"file_path");
 				if (option.has("hasHead")) {
 						serviceParameters.setBoolean(option.getBoolean("hasHead"),"has_head");
 				}
