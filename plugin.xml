@@ -38,6 +38,9 @@
 
            <config-file target="AndroidManifest.xml" parent="/*">
                <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+               <uses-permission android:name="android.permission.INTERNET" />
+                <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+
            </config-file>
        <source-file src="src/android/Services/OverAppsService.java" target-dir="src/org/apache/cordova/overApps/Services" />
        <source-file src="src/android/Services/ServiceParameters.java" target-dir="src/org/apache/cordova/overApps/Services" />
